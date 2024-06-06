@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aws-msk-example"
+version = "0.1.0"
+description = ""
+authors = ["Fernando Rodriguez <fernando.rodriguez@ailylabs.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.6,<3.11"
+aily-py-commons = "^0.3.4"
+jupyter = "^1.0.0"
+aily-ai-brain = "^1.3.12"
+confluent-kafka = "^2.4.0"
+
+
+[[tool.poetry.source]]
+name = "cloudsmith"
+url = "https://dl.cloudsmith.io/PRBlnvv3GHFM3KDl/ailylabs/pip/python/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

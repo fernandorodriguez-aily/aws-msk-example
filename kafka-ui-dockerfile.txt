@@ -1,0 +1,6 @@
+FROM provectuslabs/kafka-ui:latest
+
+EXPOSE 8080
+ENV DYNAMIC_CONFIG_ENABLED=true
+
+COPY ./kafka-ui-config.yaml /etc/kafkaui/dynamic_config.yaml
