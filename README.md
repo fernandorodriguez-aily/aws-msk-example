@@ -5,6 +5,8 @@ A small example on how to use Kafka in AWS MSK.
 
 For detailed instructions, refer to the [original Confluence page](https://ailylabs.atlassian.net/wiki/spaces/AIL/pages/1953857723/External+async+communication+Kafka). Below are the steps to create and run a local Docker image for Kafka-UI:
 
+**Note:** Adapt the following code to `dev` or `prod`accordingly.
+
 1. Build the Docker image using the `kafka-ui-dockerfile.txt`:
     ```sh
     docker build -t kafkaui:local . -f kafka-ui-dockerfile.txt

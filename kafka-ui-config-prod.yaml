@@ -1,0 +1,18 @@
+auth:
+  type: DISABLED
+kafka:
+  clusters:
+  - bootstrapServers: "" # Manually fill with "boostrap_public" information from secret aily/infrastructure/prod/msk/msk-controlplane-infrastructure-dev/ailypubsub
+    metrics:
+      port: 9997
+      type: JMX
+    name: external-prod
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: SCRAM-SHA-512
+      sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required
+        username="" password=""; # Manually fill with "username" and "password" information from secret aily/infrastructure/prod/msk/msk-controlplane-infrastructure-dev/ailypubsub
+    readOnly: false
+rbac:
+  roles: []
+webclient: {}
